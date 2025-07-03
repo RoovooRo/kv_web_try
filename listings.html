@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakkumised - Best For All Kinnisvara</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Best For All Logo" class="logo-img">
+                        <div class="logo-text">
+                            <h2>BEST FOR ALL</h2>
+                            <span>KINNISVARA</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="listings.html" class="nav-link active">Pakkumised</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="listings-hero">
+            <div class="container">
+                <h1>Meie Pakkumised</h1>
+                <p>Avastage meie hoolikalt valitud kinnisvara pakkumisi</p>
+            </div>
+        </section>
+
+        <section class="listings-content">
+            <div class="container">
+                <div class="listings-grid">
+                    <!-- Sample Listing 1 -->
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="images/listings/property1.jpg" alt="Kinnisvara pakkumine">
+                            <div class="listing-badge">Müük</div>
+                        </div>
+                        <div class="listing-content">
+                            <h3>Kaasaegne Korter Tallinna Kesklinnas</h3>
+                            <p class="listing-location">📍 Tallinn, Kesklinn</p>
+                            <p class="listing-price">€250,000</p>
+                            <p class="listing-details">3 tuba • 85 m² • 2. korrus</p>
+                            <p class="listing-description">Renoveeritud korter kõigi mugavustega. Suurepärane asukoht linna keskuses.</p>
+                            <button class="btn btn-primary listing-btn" onclick="showListingDetails(1)">Vaata Detaile</button>
+                        </div>
+                    </div>
+
+                    <!-- Sample Listing 2 -->
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="images/listings/property2.jpg" alt="Kinnisvara pakkumine">
+                            <div class="listing-badge">Üür</div>
+                        </div>
+                        <div class="listing-content">
+                            <h3>Avar Maja Privaatses Asukohas</h3>
+                            <p class="listing-location">📍 Tallinn, Nõmme</p>
+                            <p class="listing-price">€1,200/kuu</p>
+                            <p class="listing-details">5 tuba • 150 m² • Aiaga</p>
+                            <p class="listing-description">Rahulik asukoht, suurepärane perekonnale. Privaatne aed ja parkimiskoht.</p>
+                            <button class="btn btn-primary listing-btn" onclick="showListingDetails(2)">Vaata Detaile</button>
+                        </div>
+                    </div>
+
+                    <!-- Sample Listing 3 -->
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="images/listings/property3.jpg" alt="Kinnisvara pakkumine">
+                            <div class="listing-badge">Müük</div>
+                        </div>
+                        <div class="listing-content">
+                            <h3>Moodne Äripind Südalinnas</h3>
+                            <p class="listing-location">📍 Tallinn, Kesklinn</p>
+                            <p class="listing-price">€180,000</p>
+                            <p class="listing-details">Äripind • 65 m² • 1. korrus</p>
+                            <p class="listing-description">Ideaalne asukoht äri alustamiseks. Suur läbikäik ja hea nähtavus.</p>
+                            <button class="btn btn-primary listing-btn" onclick="showListingDetails(3)">Vaata Detaile</button>
+                        </div>
+                    </div>
+
+                    <!-- Sample Listing 4 -->
+                    <div class="listing-card">
+                        <div class="listing-image">
+                            <img src="images/listings/property4.jpg" alt="Kinnisvara pakkumine">
+                            <div class="listing-badge">Müük</div>
+                        </div>
+                        <div class="listing-content">
+                            <h3>Eksklusiivne Penthouse Vaatega</h3>
+                            <p class="listing-location">📍 Tallinn, Pirita</p>
+                            <p class="listing-price">€450,000</p>
+                            <p class="listing-details">4 tuba • 120 m² • Terrass</p>
+                            <p class="listing-description">Luksuslik penthouse kaunite vaadetega. Privaatne terrass ja parkimiskoht.</p>
+                            <button class="btn btn-primary listing-btn" onclick="showListingDetails(4)">Vaata Detaile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ei leidnud sobivat pakkumist?</h2>
+                <p>Võtke meiega ühendust ja aitame teil leida ideaalse kinnisvara!</p>
+                <a href="contact.html" class="btn btn-primary">Võta Ühendust</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Best For All Kinnisvara. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Show listing details (placeholder function)
+        function showListingDetails(listingId) {
+            alert(`Pakkumise detailid (ID: ${listingId})\n\nTulevikus avaneb siit detailne vaade pakkumisest.\n\nPraegu võtke ühendust: juri@bestkv.ee`);
+        }
+    </script>
+</body>
+</html>

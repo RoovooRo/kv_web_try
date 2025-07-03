@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best For All - Kinnisvara</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Best For All Logo" class="logo-img">
+                        <div class="logo-text">
+                            <h2>BEST FOR ALL</h2>
+                            <span>KINNISVARA</span>
+                        </div>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="listings.html" class="nav-link">Pakkumised</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Slideshow Section -->
+    <section class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="images/listings/property1.jpg" alt="Kinnisvara 1">
+            </div>
+            <div class="slide">
+                <img src="images/listings/property2.jpg" alt="Kinnisvara 2">
+            </div>
+            <div class="slide">
+                <img src="images/listings/property3.jpg" alt="Kinnisvara 3">
+            </div>
+            <div class="slide">
+                <img src="images/listings/property4.jpg" alt="Kinnisvara 4">
+            </div>
+        </div>
+        <div class="slideshow-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <main>
+        <!-- Hero Section with centered buttons -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Professionaalne Kinnisvaramaakler</h1>
+                <p>Avastage erilised kinnisvaraoksjonid ja investeerimisvõimalused meie ekspertide juhendamisel.</p>
+                <div class="hero-buttons">
+                    <a href="listings.html" class="btn btn-primary">Vaata Kõiki Pakkumisi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Reviews Section -->
+        <section class="client-reviews">
+            <div class="container">
+                <h2>Meie Klientide Arvamused</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="client-photo">
+                            <img src="images/clients/client1.jpg" alt="Rahul klient">
+                        </div>
+                        <div class="review-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"Suurepärane teenindus! Leidsid meile unistuste kodu kiiresti ja tõhusalt. Soovitan kindlasti!"</p>
+                            <h4>- Maarja Kask</h4>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="client-photo">
+                            <img src="images/clients/client2.jpg" alt="Rahul klient">
+                        </div>
+                        <div class="review-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"Professionaalne, teadmisterikas ja alati kättesaadav. Muutsid meie kinnisvarainvesteeringu lihtsaks."</p>
+                            <h4>- Andres Tamm</h4>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="client-photo">
+                            <img src="images/clients/client3.jpg" alt="Rahul klient">
+                        </div>
+                        <div class="review-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"Suurepärane turututundmine ja individuaalne lähenemine. Müüsid meie kinnisvara üle küsimishinna!"</p>
+                            <h4>- Liis Mets</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Agents Section -->
+        <section class="our-agents">
+            <div class="container">
+                <h2>Meie Meeskond</h2>
+                <div class="agents-grid">
+                    <div class="agent-card">
+                        <div class="agent-photo">
+                            <img src="images/agents/juri.jpg" alt="Jüri Võssokov">
+                        </div>
+                        <div class="agent-content">
+                            <h3>Jüri Võssokov</h3>
+                            <p class="agent-title">Kinnisvaramaakler</p>
+                            <p class="agent-phone">📞 +372 5086003</p>
+                            <a href="https://www.kv.ee/maakler/jurivossokov1?fbclid=IwY2xjawLTnFhleHRuA2FlbQIxMABicmlkETBSOHNGbWRBSmJoV1Q2UTZFAR5pxKzWaBnq86TQDVHEsE4XYbbtiuYWfqKlhCXR7qIe64Az-8zTCyZbpmuAPA_aem_x-8QyADJQsNcm-umeSN3Gg" class="agent-link" target="_blank">Vaata profiili KV.ee</a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-photo">
+                            <img src="images/agents/taavi.jpg" alt="Taavi Eplik">
+                        </div>
+                        <div class="agent-content">
+                            <h3>Taavi Eplik</h3>
+                            <p class="agent-title">Kinnisvaramaakler</p>
+                            <p class="agent-phone">📞 +372 5033423</p>
+                            <a href="https://www.kv.ee/maakler/taavi_eplik?fbclid=IwY2xjawLTnf9leHRuA2FlbQIxMABicmlkETBSOHNGbWRBSmJoV1Q2UTZFAR4IU4nWJnTHqEvtPg1PqxcvHBmCIqgnDwDvDbsC3Nf1YBqRkbImMKGlt1pyVw_aem_2c4xuV8oxXGYnksmxkfdxQ" class="agent-link" target="_blank">Vaata profiili KV.ee</a>
+                        </div>
+                    </div>
+                    <div class="agent-card">
+                        <div class="agent-photo">
+                            <img src="images/agents/elina.jpg" alt="Elina Boguslavski">
+                        </div>
+                        <div class="agent-content">
+                            <h3>Elina Boguslavski</h3>
+                            <p class="agent-title">Kinnisvaramaakler</p>
+                            <p class="agent-phone">📞 +372 5110231</p>
+                            <a href="https://www.kv.ee/maakler/elinaboguslavski1?fbclid=IwY2xjawLTnT1leHRuA2FlbQIxMABicmlkETBSOHNGbWRBSmJoV1Q2UTZFAR4dBofNc1O_Sz5DpyMrc59ucMs5BgxhSl3YbZ3SfsN7UQ41zI3TeTS5hEt74w_aem_abilrflvCVNMqxEJmE5DGg" class="agent-link" target="_blank">Vaata profiili KV.ee</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Võta Meiega Ühendust</h3>
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <a href="mailto:juri@bestkv.ee">juri@bestkv.ee</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <a href="https://wa.me/3725140208" target="_blank">WhatsApp: +372 514 0208</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📘</span>
+                            <a href="https://www.facebook.com/BestForAllKV" target="_blank">Facebook: BestForAllKV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Best For All Kinnisvara. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
