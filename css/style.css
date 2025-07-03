@@ -1,0 +1,798 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #0a0a0a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(212, 175, 55, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #d4af37;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text h2 {
+    color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-text span {
+    color: #b8860b;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: #d4af37;
+    color: #000;
+    border-color: #d4af37;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    background-color: #000;
+}
+
+.slideshow {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.slideshow-dots {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #444;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: #d4af37;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #d4af37;
+    padding: 80px 0;
+    text-align: center;
+    border-top: 3px solid #d4af37;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #d4af37;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ccc;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    color: #000;
+    border: 2px solid #d4af37;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #d4af37;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Client Reviews Section */
+.client-reviews {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.client-reviews h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #d4af37;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    border: 2px solid #333;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.client-photo {
+    margin-bottom: 1.5rem;
+}
+
+.client-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #d4af37;
+}
+
+.stars {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.review-content p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.review-content h4 {
+    color: #d4af37;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Our Agents Section */
+.our-agents {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.our-agents h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #d4af37;
+}
+
+.agents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.agent-card {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    border: 2px solid #333;
+}
+
+.agent-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.agent-photo {
+    margin-bottom: 1.5rem;
+}
+
+.agent-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+}
+
+.agent-content h3 {
+    color: #d4af37;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.agent-title {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.agent-phone {
+    color: #d4af37;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.agent-link {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.agent-link:hover {
+    background-color: transparent;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+}
+
+/* Contact Information */
+.contact-info {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.contact-info h3 {
+    color: #d4af37;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ccc;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #d4af37;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 2px solid #d4af37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .logo a {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .slideshow {
+        height: 250px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .agents-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* Placeholder for missing images */
+.slide img:not([src*="data:"]):not([src*="http"]) {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+.client-photo img:not([src*="data:"]):not([src*="http"]) {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+}
+
+.agent-photo img:not([src*="data:"]):not([src*="http"]) {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+}
+
+/* Contact Page Styles */
+.contact-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #d4af37;
+    padding: 60px 0;
+    text-align: center;
+    border-top: 3px solid #d4af37;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.contact-content {
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contact-info-section h2,
+.contact-form-section h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info-section .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-section .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.contact-info-section .contact-item:hover {
+    border-color: #d4af37;
+}
+
+.contact-info-section .contact-icon {
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-details strong {
+    color: #d4af37;
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-details a:hover {
+    color: #d4af37;
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #d4af37;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: #ccc;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-info-section .contact-methods {
+        gap: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+/* Listings Page Styles */
+.listings-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #d4af37;
+    padding: 60px 0;
+    text-align: center;
+    border-top: 3px solid #d4af37;
+}
+
+.listings-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d4af37;
+}
+
+.listings-hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.listings-content {
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.listing-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+    border: 2px solid #333;
+}
+
+.listing-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.listing-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.listing-card:hover .listing-image img {
+    transform: scale(1.05);
+}
+
+.listing-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d4af37;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.listing-content {
+    padding: 1.5rem;
+}
+
+.listing-content h3 {
+    color: #d4af37;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.listing-location {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.listing-price {
+    color: #d4af37;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.listing-details {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.listing-description {
+    color: #ccc;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.listing-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: #111;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design for Listings Page */
+@media (max-width: 768px) {
+    .listings-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .listings-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .listing-image {
+        height: 180px;
+    }
+    
+    .listing-content {
+        padding: 1rem;
+    }
+    
+    .cta-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
